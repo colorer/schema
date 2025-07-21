@@ -5,55 +5,55 @@
   targetNamespace="http://colorer.sf.net/2003/doclinks"
   elementFormDefault="qualified">
 
-  <xs:element name="doclinks" type="doclinks"/>
+  <xs:element name="doclinks" type="doclinks" />
 
   <xs:complexType name="doclinks">
-    <xs:annotation><xs:documentation>
-      Each doclinks file contains information about
-      linking of different tokens into URL addresses with
-      some information about this token.
-      This can be cross reference to help files on classes,
-      methods, objects of file.
-    </xs:documentation></xs:annotation>
+    <xs:annotation>
+      <xs:documentation> Each doclinks file contains information about linking of different tokens
+        into URL addresses with some information about this token. This can be cross reference to
+        help files on classes, methods, objects of file. </xs:documentation>
+    </xs:annotation>
     <xs:sequence>
-      <xs:element name="links" type="links"/>
+      <xs:element name="links" type="links" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:attributeGroup name="linkProps">
     <xs:attribute name="scheme" type="xs:string">
-      <xs:annotation><xs:documentation>
-      xx
-      </xs:documentation></xs:annotation>
+      <xs:annotation>
+        <xs:documentation> xx </xs:documentation>
+      </xs:annotation>
     </xs:attribute>
     <xs:attribute name="url" type="xs:anyURI">
-      <xs:annotation><xs:documentation>
-      xx
-      </xs:documentation></xs:annotation>
+      <xs:annotation>
+        <xs:documentation> xx </xs:documentation>
+      </xs:annotation>
     </xs:attribute>
   </xs:attributeGroup>
 
 
   <xs:complexType name="links">
-    <xs:annotation><xs:documentation>
-    List of links. Used to define global values for scheme and url attributes.
-    Each link can redefine them.
-    </xs:documentation></xs:annotation>
+    <xs:annotation>
+      <xs:documentation> List of links. Used to define global values for scheme and url attributes.
+        Each link can redefine them. </xs:documentation>
+    </xs:annotation>
     <xs:sequence>
-      <xs:element name="link" type="link" minOccurs='0' maxOccurs="unbounded"/>
+      <xs:element name="link" type="link" minOccurs='0' maxOccurs="unbounded" />
     </xs:sequence>
-    <xs:attributeGroup ref='linkProps'/>
+    <xs:attributeGroup ref='linkProps' />
   </xs:complexType>
 
 
   <xs:complexType name="link">
-    <xs:annotation><xs:documentation>
-      Defines mapping of some token into URL, including information
-      about it's scheme.
-    </xs:documentation></xs:annotation>
-    <xs:attributeGroup ref='linkProps'/>
+    <xs:annotation>
+      <xs:documentation> Defines mapping of some token into URL, including information about it's
+        scheme. </xs:documentation>
+    </xs:annotation>
+    <xs:attributeGroup ref='linkProps' />
     <xs:attribute name="token" type="xs:string" use="required">
-      <xs:annotation><xs:documentation>Token chars to search in text</xs:documentation></xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Token chars to search in text</xs:documentation>
+      </xs:annotation>
     </xs:attribute>
   </xs:complexType>
 
