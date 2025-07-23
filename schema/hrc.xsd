@@ -150,6 +150,12 @@
         <xs:documentation> User description, used to represent package in target IDE. </xs:documentation>
       </xs:annotation>
     </xs:attribute>
+    <xs:attribute name="global" type="xs:string" default="yes">
+      <xs:annotation>
+        <xs:documentation> It divides packages into global (equal in properties to the prototype)
+          and internal, used inside the type </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
     <xs:attribute name="targetNamespace" type="xs:anyURI">
       <xs:annotation>
         <xs:documentation> Applicable to the XML group of languages. Specifies namespace, this HRC
