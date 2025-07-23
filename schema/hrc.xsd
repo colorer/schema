@@ -182,7 +182,7 @@
         <xs:documentation> User description, used to represent language in target IDE. </xs:documentation>
       </xs:annotation>
     </xs:attribute>
-    <xs:attribute name="group" type="xs:Name">
+    <xs:attribute name="group" type="xs:Name" use="required">
       <xs:annotation>
         <xs:documentation> Group of languages, this language belongs to. </xs:documentation>
       </xs:annotation>
