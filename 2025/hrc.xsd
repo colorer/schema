@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://colorer.sf.net/2003/hrc"
-  targetNamespace="http://colorer.sf.net/2003/hrc"
+  xmlns="http://colorer.github.io/schema/2025/hrc"
+  targetNamespace="http://colorer.github.io/schema/2025/hrc"
   elementFormDefault="qualified">
 
   <xs:simpleType name="REstring">
