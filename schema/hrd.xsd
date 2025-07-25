@@ -27,6 +27,21 @@
         <xs:element name="assign" type='assign' />
       </xs:sequence>
     </xs:sequence>
+    <xs:attribute name="class" type="xs:NMTOKEN">
+      <xs:annotation>
+        <xs:documentation> HRD class. Currently available 'console', 'rgb' and 'text' classes. </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="name" type="xs:NMTOKEN">
+      <xs:annotation>
+        <xs:documentation> Internal name of this set, used to referring from executable codes. </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="description" type="xs:string">
+      <xs:annotation>
+        <xs:documentation> User-friendly description of this HRD set. </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="documentation" mixed="true">
